@@ -24,17 +24,18 @@ namespace Program
             this.Ataque = Ataque + Hacha.valorataque;
         }
 
-        public int Atacar
+        public int Atacar()
         {
-            get
+            /*get
             {
                 return this.Ataque;
-            }
+            }*/
+            return this.Ataque;
         }
 
         public int RecibirAtaque (Elfo a)
         {
-            this.Vida = Vida - Elfo.Atacar
+            this.Vida = Vida - Elfo.Atacar();
             if (this.Vida < 0)
             {
                 this.Vida = 0;
