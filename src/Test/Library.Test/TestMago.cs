@@ -3,7 +3,6 @@ using NUnit.Framework;
 namespace Program
 {
 
-
     public class TestMago
     {
         Mago Gandalf = new Mago("Gandalf");
@@ -28,10 +27,10 @@ namespace Program
         [Test]
         public void TestMago_QuitarAtaque()
         {
-            int damage = Gandalf.AttackDmg;
+            int d = Gandalf.AttackDmg;
             Gandalf.AgregarBaston(Baston);
             Gandalf.QuitarBaston();
-            Assert.AreEqual(Gandalf.AttackDmg, damage);
+            Assert.AreEqual(Gandalf.AttackDmg, d);
         }
 
         [Test]

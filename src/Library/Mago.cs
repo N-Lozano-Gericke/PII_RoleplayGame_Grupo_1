@@ -7,15 +7,7 @@ namespace Program
         private int attackdmg = 10;
         private int health = 100;
         private int defence = 10;
-        
-        public Mago(string name)
-        {
-            this.Name = name;
-
-        }
         private string name;
-        
-
         public string Name
         {
             get
@@ -69,8 +61,13 @@ namespace Program
                 }
             }
         }
-        public Baston Baston;
+         public Baston Baston;
         public Libro Libro;
+        public Mago(string name)
+        {
+            this.Name = name;
+
+        }
         public int Atacar()
         {
                 return this.attackdmg;
@@ -83,6 +80,10 @@ namespace Program
                 this.Baston = baston;
                 this.AttackDmg = this.attackdmg + baston.AttackDmg;
             }
+            else
+            {
+                Console.WriteLine("Ya posee este item");
+            }
         }
         public void QuitarBaston()
         {
@@ -90,6 +91,10 @@ namespace Program
             {
                 this.AttackDmg = this.AttackDmg - this.Baston.AttackDmg;
                 this.Baston = null;
+            }
+            else
+            {
+                Console.WriteLine("No posee este item");
             }
         }
          public void AgregarLibro(Libro libro)
@@ -99,6 +104,10 @@ namespace Program
                 this.Libro = libro;
                 this.Defence = this.defence + libro.Defence;
             }
+            else
+            {
+                Console.WriteLine("Ya posee este item");
+            }
         }
         public void QuitarLibro()
         {
@@ -106,6 +115,10 @@ namespace Program
             {
                 this.Defence = this.Defence - this.Libro.Defence;
                 this.Libro = null;
+            }
+             else
+            {
+                Console.WriteLine("No posee este item");
             }
         }
 
