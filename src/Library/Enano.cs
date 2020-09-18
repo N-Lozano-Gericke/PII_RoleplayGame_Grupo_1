@@ -22,6 +22,7 @@ namespace Program
         {
             this.Ataque = this.Ataque + Hacha.valorataque;
         }
+        
         public int Atacar()
         {
             /*get
