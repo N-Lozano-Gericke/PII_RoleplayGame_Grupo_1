@@ -2,13 +2,15 @@ using System;
 
 namespace Program
 {
+    
     public class Libro
     {
+        private int defence = 100;
         public int Defence
         {
             get
             {
-                return 100;
+                return defence;
             }
         }
         public string Echizo

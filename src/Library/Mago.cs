@@ -15,7 +15,7 @@ namespace Program
 
         }
         private string name;
-        private int life;
+        
 
         public string Name
         {

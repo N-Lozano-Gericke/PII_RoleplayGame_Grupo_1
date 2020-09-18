@@ -1,16 +1,21 @@
 using NUnit.Framework;
 
-namespace Test.Library
+namespace Program
 {
 
 
-    public class ExampleTest
+    public class TestMago
     {
+        Mago Gandalf = new Mago("Gandalf");
+        Baston Baston = new Baston();
+        Libro Libro = new Libro();
 
         [Test]
-        public void dummyTest()
+        public void TestMago_CambiarNombre()
         {
-            Assert.True(true);
+            string nuevonombre = "Merlin";
+            Gandalf.Name = nuevonombre;
+            Assert.AreEqual(Gandalf.Name, nuevonombre);
         }
 
     }
