@@ -41,7 +41,7 @@ namespace Program
             }
             else
             {
-                Console.Writeline("Ya posees una espada equipada");
+                Console.WriteLine("Ya posees una espada equipada");
             }
         }
         public void QuitarEspada()
@@ -53,7 +53,7 @@ namespace Program
             }
             else
             {
-                Console.Writeline("No posees una espada equipada");
+                Console.WriteLine("No posees una espada equipada");
             }
         }
         public void AgregarEscudo(Escudo escudo)
@@ -65,7 +65,7 @@ namespace Program
             }
             else
             {
-                Console.Writeline("Ya posees un escudo equipada");
+                Console.WriteLine("Ya posees un escudo equipada");
             }
         }
         public void QuitarEscudo()
@@ -77,7 +77,7 @@ namespace Program
             }
             else
             {
-                Console.Writeline("No posees una espada equipada");
+                Console.WriteLine("No posees una espada equipada");
             }
         }
     }
