@@ -2,7 +2,7 @@ using NUnit.Framework;
 
 namespace Program
 {
-    public class ExampleTest
+    public class TestCaballero
     {
         Caballero CaballeroI = new Caballero("Aragon");
         
