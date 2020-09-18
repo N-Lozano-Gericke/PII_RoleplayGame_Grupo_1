@@ -7,8 +7,7 @@ namespace Program
         private int attackdmg = 10;
         private int health = 100;
         private int defence = 10;
-        public Baston Baston;
-        public Libro Libro;
+        
         public Mago(string name)
         {
             this.Name = name;
@@ -70,6 +69,8 @@ namespace Program
                 }
             }
         }
+        public Baston Baston;
+        public Libro Libro;
         public int Atacar()
         {
                 return this.attackdmg;
