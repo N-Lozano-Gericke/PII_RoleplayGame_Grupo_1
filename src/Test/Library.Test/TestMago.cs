@@ -16,7 +16,7 @@ namespace Program
             Baston = new Baston();
             Libro = new Libro();
         }
-        
+        //Test para verificar el correcto funcionamiento del Name de la clase Mago
         [Test]
         public void TestMago_CambiarNombre()
         {
@@ -24,6 +24,7 @@ namespace Program
             Gandalf.Name = nuevonombre;
             Assert.AreEqual(Gandalf.Name, nuevonombre);
         }
+        //Test para verificar la correcta validacion del Name de la clase Mago
         [Test]
         public void TestMago_NoCambiarNombre()
         {
@@ -31,7 +32,7 @@ namespace Program
             Gandalf.Name = "";
             Assert.AreEqual(Gandalf.Name, Nombre);
         }
-
+        //Test para verificar el funcionamiento del AttackDmg y del metodo QuitarBaston de la clase Mago
         [Test]
         public void TestMago_QuitarAtaque()
         {
@@ -40,7 +41,7 @@ namespace Program
             Gandalf.QuitarBaston();
             Assert.AreEqual(Gandalf.AttackDmg, damage);
         }
-
+        //Test para verificar el correcto funcionamiento del AttackDmg y del metodo AgregarBaston de la clase Mago
         [Test]
         public void TestMago_AgregarAtaque()
         {
@@ -48,7 +49,7 @@ namespace Program
             Gandalf.AgregarBaston(Baston);
             Assert.AreEqual(Gandalf.AttackDmg, damage + Baston.AttackDmg);
         }
-
+        //Test para verificar el funcionamiento del Defence y del metodo QuitarLibro de la clase Mago
         [Test]
         public void TestMago_QuitarDefensa()
         {
@@ -57,7 +58,7 @@ namespace Program
             Gandalf.QuitarLibro();
             Assert.AreEqual(Gandalf.Defence, defence);
         }
-
+        //Test para verificar el funcionamiento del Defence y del metodo AgregarLibro de la clase Mago
         [Test]
         public void TestMago_AgregarDefensa()
         {
@@ -65,7 +66,7 @@ namespace Program
             Gandalf.AgregarLibro(Libro);
             Assert.AreEqual(Gandalf.Defence, defence + Libro.Defence);
         }
-
+        //Test para verificar el funcionamiento del Health y del metodo RecibirAtaque de la clase Mago
         [Test]
         public void TestMago_RecibirAtaque()
         {
@@ -73,7 +74,7 @@ namespace Program
             Gandalf.RecibirAtaque(10);
             Assert.AreEqual(Gandalf.Health, health - 10 / Gandalf.Defence);
         }
-        
+        //Test para verificar la correcta validacion del Health de la clase Mago
         [Test]
         public void TestMago_RecibirAtaqueLetal()
         {
