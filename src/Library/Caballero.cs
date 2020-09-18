@@ -53,6 +53,6 @@ namespace Program
                 this.Defensa = this.Defensa - this.Escudo.valorDefensa;
                 this.Espada = null;
             }
-
+        }
     }
 }
