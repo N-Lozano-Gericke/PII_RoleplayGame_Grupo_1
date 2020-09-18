@@ -16,13 +16,12 @@ namespace Program
         
         public void AgregarEscudoRedondo (EscudoRedondo EscudoRedondo)
         {
-            this.Defensa = Defensa + EscudoRedondo.valordefensa;
+            this.Defensa = this.Defensa + EscudoRedondo.valordefensa;
         }
         public void AgregarHacha (Hacha Hacha)
         {
-            this.Ataque = Ataque + Hacha.valorataque;
+            this.Ataque = this.Ataque + Hacha.valorataque;
         }
-s
         public int Atacar()
         {
             /*get
@@ -33,7 +32,7 @@ s
         }
         public int RecibirAtaque (int ataque)
         {
-            this.Vida = Vida - ataque;
+            this.Vida = this.Vida - ataque;
             if (this.Vida < 0)
             {
                 this.Vida = 0;
