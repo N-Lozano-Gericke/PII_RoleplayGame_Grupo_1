@@ -27,35 +27,35 @@ namespace Program
         [Test]
         public void TestMago_AgregarAtaque()
         {
-            int damage = Gandalf.AttackDmg;
+            int ataque = Gandalf.AttackDmg;
             Gandalf.AgregarBaston(Baston);
-            Assert.AreEqual(Gandalf.AttackDmg, damage + Baston.AttackDmg);
+            Assert.AreEqual(Gandalf.AttackDmg, ataque + Baston.AttackDmg);
         }
 
         [Test]
         public void TestMago_QuitarAtaque()
         {
-            int damage = Gandalf.AttackDmg;
+            int ataque = Gandalf.AttackDmg;
             Gandalf.AgregarBaston(Baston);
             Gandalf.QuitarBaston();
-            Assert.AreEqual(Gandalf.AttackDmg, damage);
+            Assert.AreEqual(Gandalf.AttackDmg, ataque);
         }
 
         [Test]
         public void TestMago_AgregarDefensa()
         {
-            int defence = Gandalf.Defence;
+            int defensa = Gandalf.Defence;
             Gandalf.AgregarLibro(Libro);
-            Assert.AreEqual(Gandalf.Defence, defence + Libro.Defence);
+            Assert.AreEqual(Gandalf.Defence, defensa + Libro.Defence);
         }
 
         [Test]
         public void TestMago_QuitarDefensa()
         {
-            int defence = Gandalf.Defence;
+            int defensa = Gandalf.Defence;
             Gandalf.AgregarLibro(Libro);
             Gandalf.QuitarLibro();
-            Assert.AreEqual(Gandalf.Defence, defence);
+            Assert.AreEqual(Gandalf.Defence, defensa);
         }
 
         [Test]
