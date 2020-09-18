@@ -2,9 +2,9 @@ using System;
 
 namespace Program
 {
-    public class Hacha
+    public class EscudoRedondo
     {
-        public int valorataque
+        public int valordefensa
         {
             get
             {

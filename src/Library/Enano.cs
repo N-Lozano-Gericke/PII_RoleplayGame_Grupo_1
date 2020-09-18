@@ -33,9 +33,9 @@ namespace Program
             return this.Ataque;
         }
 
-        public int RecibirAtaque (Elfo a)
+        public int RecibirAtaque (int ataque)
         {
-            this.Vida = Vida - Elfo.Atacar();
+            this.Vida = Vida - ataque;
             if (this.Vida < 0)
             {
                 this.Vida = 0;
