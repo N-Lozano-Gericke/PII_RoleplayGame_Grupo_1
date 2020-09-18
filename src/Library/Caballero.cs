@@ -4,10 +4,10 @@ namespace Program
 {
     public class Caballero
     {
-        private int vida;
-        private int ataque;
+        private int Vida;
+        private int Ataque;
 
-        private int defensa;
+        private int Defensa;
         
         private string nombre;
         public string Nombre
