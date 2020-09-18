@@ -4,12 +4,12 @@ namespace Program
 {
     public class Baston
     {
-        private int attackdmg = 70;
+        private int attack = 70;
         public int AttackDmg
         {
             get
             {
-                return attackdmg;
+                return attack;
             }
         }
     }

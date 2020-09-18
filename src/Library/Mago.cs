@@ -4,9 +4,9 @@ namespace Program
 {
     public class Mago
     {
-        private int attackdmg = 10;
-        private int health = 100;
-        private int defence = 10;
+        private int attackdmg;
+        private int health;
+        private int defence;
         private string name;
         public string Name
         {
@@ -61,11 +61,14 @@ namespace Program
                 }
             }
         }
-         public Baston Baston;
+        public Baston Baston;
         public Libro Libro;
         public Mago(string name)
         {
             this.Name = name;
+            this.Health = 100;
+            this.Defence = 10;
+            this.AttackDmg = 10;
 
         }
         public int Atacar()

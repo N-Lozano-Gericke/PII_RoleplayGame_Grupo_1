@@ -5,10 +5,18 @@ namespace Program
 
     public class TestMago
     {
-        Mago Gandalf = new Mago("Gandalf");
-        Baston Baston = new Baston();
-        Libro Libro = new Libro();
+       private Mago Gandalf;
+       private Baston Baston;
+       private Libro Libro;
 
+        [SetUp]
+        public void Setup()
+        {
+            Gandalf = new Mago("Gandalf");
+            Baston = new Baston();
+            Libro = new Libro();
+        }
+        
         [Test]
         public void TestMago_CambiarNombre()
         {
@@ -23,14 +31,14 @@ namespace Program
             Gandalf.Name = "";
             Assert.AreEqual(Gandalf.Name, Nombre);
         }
-        
+
         [Test]
         public void TestMago_QuitarAtaque()
         {
-            int d = Gandalf.AttackDmg;
+            int damage = Gandalf.AttackDmg;
             Gandalf.AgregarBaston(Baston);
             Gandalf.QuitarBaston();
-            Assert.AreEqual(Gandalf.AttackDmg, d);
+            Assert.AreEqual(Gandalf.AttackDmg, damage);
         }
 
         [Test]
