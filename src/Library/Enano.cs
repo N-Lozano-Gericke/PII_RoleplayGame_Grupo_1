@@ -18,12 +18,11 @@ namespace Program
         {
             this.Defensa = Defensa + EscudoRedondo.valordefensa;
         }
-
         public void AgregarHacha (Hacha Hacha)
         {
             this.Ataque = Ataque + Hacha.valorataque;
         }
-
+s
         public int Atacar()
         {
             /*get
@@ -32,7 +31,6 @@ namespace Program
             }*/
             return this.Ataque;
         }
-
         public int RecibirAtaque (int ataque)
         {
             this.Vida = Vida - ataque;
