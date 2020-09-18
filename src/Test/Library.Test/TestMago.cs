@@ -36,7 +36,7 @@ namespace Program
         public void TestMago_QuitarAtaque()
         {
             int damage = Gandalf.AttackDmg;
-            Gandalf.AgregarBaston(Baston);
+            
             Gandalf.QuitarBaston();
             Assert.AreEqual(Gandalf.AttackDmg, damage);
         }
