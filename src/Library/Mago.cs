@@ -81,14 +81,14 @@ namespace Program
             if(this.Baston == null)
             {
                 this.Baston = baston;
-                this.AttackDmg = this.attackdmg + Baston.AttackDmg;
+                this.AttackDmg = this.AttackDmg + Baston.AttackDmg;
             }
         }
         public void QuitarBaston()
         {
             if(this.Baston != null)
             {
-                this.AttackDmg = this.attackdmg - Baston.AttackDmg;
+                this.AttackDmg = this.AttackDmg - Baston.AttackDmg;
                 this.Baston = null;
             }
         }
@@ -97,14 +97,14 @@ namespace Program
             if(this.Libro == null)
             {
                 this.Libro = libro;
-                this.Defence = this.defence + Libro.Defence;
+                this.Defence = this.Defence + Libro.Defence;
             }
         }
         public void QuitarLibro()
         {
             if(this.Libro != null)
             {
-                this.Defence = this.defence - Libro.Defence;
+                this.Defence = this.Defence - Libro.Defence;
                 this.Libro = null;
             }
         }
