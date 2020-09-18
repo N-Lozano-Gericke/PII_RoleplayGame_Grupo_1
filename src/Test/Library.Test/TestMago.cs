@@ -48,6 +48,7 @@ namespace Program
             Gandalf.AgregarLibro(Libro);
             Assert.AreEqual(Gandalf.Defence, defence + Libro.Defence);
         }
+
         [Test]
         public void TestMago_QuitarDefensa()
         {
@@ -56,6 +57,7 @@ namespace Program
             Gandalf.QuitarLibro();
             Assert.AreEqual(Gandalf.Defence, defence);
         }
+
         [Test]
         public void TestMago_RecibirAtaque()
         {
@@ -63,6 +65,7 @@ namespace Program
             Gandalf.RecibirAtaque(10);
             Assert.AreEqual(Gandalf.Health, health - 10 / Gandalf.Defence);
         }
+        
         [Test]
         public void TestMago_RecibirAtaqueLetal()
         {

@@ -52,6 +52,11 @@ namespace Program
                 {
                     health = value;
                 }
+                else
+                {
+                    health = 0;
+                }
+
             }
         }
          public int Defence
