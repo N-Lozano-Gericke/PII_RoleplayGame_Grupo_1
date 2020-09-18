@@ -2,7 +2,7 @@ using NUnit.Framework;
 
 namespace Program
 {
-    public class ExampleTest
+    public class TestElfo
     {
         Elfo Aldo = new Elfo("Aldo");
         Arco Arco = new Arco();
