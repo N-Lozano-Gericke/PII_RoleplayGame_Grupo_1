@@ -7,7 +7,11 @@ namespace Program
     // ser utilizados por el Elfo. Ademas, por el patron EXPERT, es la Daga quien debe encargarse de conocer sus atributos.
     public class Daga
     {
-        public int ataque;
+        private int ataque;
+        public int Ataque
+        {
+            get {return ataque;}
+        }
         public Daga()
         {
             this.ataque = 15;

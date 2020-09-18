@@ -2,8 +2,6 @@ using NUnit.Framework;
 
 namespace Program
 {
-
-
     public class ExampleTest
     {
         Elfo Aldo = new Elfo("Aldo");
@@ -30,7 +28,7 @@ namespace Program
             int a = Aldo.Ataque;
             Aldo.AgregarArco(Arco);
             Aldo.AgregarDaga(Daga);
-            Assert.AreEqual(Aldo.Ataque , a+Arco.ataque+Daga.ataque);
+            Assert.AreEqual(Aldo.Ataque , a + Arco.Ataque + Daga.Ataque);
         }
         [Test]
         public void RestaAtaque()

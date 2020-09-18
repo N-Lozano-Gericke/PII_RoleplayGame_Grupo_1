@@ -4,6 +4,9 @@ namespace Program
 {
     public class Elfo
     {
+        // La clase Elfo cumple con el patrón EXPERT porque es la que se encarga de realizar todos los cambios
+        // en los atributos del Elfo creado. También cumple el patrón SRP porque su responsabilidad es crear al
+        // Elfo y realizar los cambios correspondiendtes a los atributos del objeto.
         private string nombre;
         public string Nombre
         {
@@ -66,7 +69,7 @@ namespace Program
             if (this.Arco == null)
             {
                 this.Arco = arco;
-                this.Ataque = this.ataque + arco.ataque;
+                this.Ataque = this.ataque + arco.Ataque;
             }
             else
             {
@@ -78,7 +81,7 @@ namespace Program
             if (this.Daga == null)
             {   
                 this.Daga = daga;
-                this.Ataque = this.ataque + daga.ataque;
+                this.Ataque = this.ataque + daga.Ataque;
             }
             else
             {
@@ -89,7 +92,7 @@ namespace Program
         {
             if (this.Arco != null)
             {
-                this.Ataque = this.Ataque - this.Arco.ataque;
+                this.Ataque = this.Ataque - this.Arco.Ataque;
                 this.Arco = null;
             }
             else
@@ -101,7 +104,7 @@ namespace Program
         {
             if (this.Daga != null)
             {
-                this.Ataque = this.Ataque - this.Daga.ataque;
+                this.Ataque = this.Ataque - this.Daga.Ataque;
                 this.Daga = null;
             }
             else
