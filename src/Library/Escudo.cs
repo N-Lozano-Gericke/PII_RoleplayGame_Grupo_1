@@ -11,9 +11,5 @@ namespace Program
                 return 75;
             }
         }
-      
-        }
-        
-        
-    }
+     }
 }
