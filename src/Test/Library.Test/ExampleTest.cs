@@ -2,8 +2,6 @@ using NUnit.Framework;
 
 namespace Program
 {
-
-
     public class ExampleTest
     {
         Caballero CaballeroI = new Caballero("Aragon");
@@ -13,8 +11,5 @@ namespace Program
         {
             Assert.True(true);
         }
-
     }
-
-
 }
