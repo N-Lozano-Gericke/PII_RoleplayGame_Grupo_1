@@ -5,7 +5,7 @@ namespace Program
 {
 
 
-    public class ExampleTest
+    public class EnanoTest
     {
 
         [Test]
