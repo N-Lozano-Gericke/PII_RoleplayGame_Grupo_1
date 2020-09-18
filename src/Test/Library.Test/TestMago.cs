@@ -30,7 +30,7 @@ namespace Program
         {
             int damage = Gandalf.AttackDmg;
             Gandalf.AgregarBaston(Baston);
-            Gandalf.QuitarBaston();
+            Gandalf.QuitarBaston(Baston);
             Assert.AreEqual(Gandalf.AttackDmg, damage);
         }
 
@@ -47,7 +47,7 @@ namespace Program
         {
             int defence = Gandalf.Defence;
             Gandalf.AgregarLibro(Libro);
-            Gandalf.QuitarLibro();
+            Gandalf.QuitarLibro(Libro);
             Assert.AreEqual(Gandalf.Defence, defence);
         }
 
