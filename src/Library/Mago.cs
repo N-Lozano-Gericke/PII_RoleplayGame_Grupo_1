@@ -72,9 +72,16 @@ namespace Program
         public void RecibirAtaque(int atacar)
         {
             if (this.Health > 0)
-            {
-                this.Health = this.Health - atacar*(this.Defence/100);
-            }
+            {  
+                if (this.Defence > 0)
+                {
+                    this.Health = this.Health - atacar*(this.Defence/100);
+                }
+                else
+                {
+                    this.Health = this.Health - atacar;
+                }   
+            }   
             
         }
 
