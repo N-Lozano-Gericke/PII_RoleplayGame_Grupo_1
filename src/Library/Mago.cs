@@ -88,7 +88,7 @@ namespace Program
         {
             if(this.Baston != null)
             {
-                this.AttackDmg = this.attackdmg - this.Baston.AttackDmg;
+                this.AttackDmg = this.AttackDmg - this.Baston.AttackDmg;
                 this.Baston = null;
             }
         }
@@ -104,7 +104,7 @@ namespace Program
         {
             if(this.Libro != null)
             {
-                this.Defence = this.defence - this.Libro.Defence;
+                this.Defence = this.Defence - this.Libro.Defence;
                 this.Libro = null;
             }
         }
