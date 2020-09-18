@@ -4,9 +4,9 @@ namespace Program
 {
     public class Mago
     {
-        private int Attackdmg = 10;
-        private int Health = 100;
-        private int Defence = 10;
+        private int attackdmg = 10;
+        private int health = 100;
+        private int defence = 10;
         public Baston Baston;
         public Libro Libro;
         public Mago(string name)
@@ -31,9 +31,43 @@ namespace Program
                 }
             }
         }
+        public int AttackDmg
+        {
+            get {return attackdmg;}
+            set
+            {
+                if (value>0)
+                {
+                    attackdmg = value;
+                }
+            }
+        }
+         
+         public int Health
+        {
+            get {return health;}
+            set
+            {
+                if (value>0)
+                {
+                    health = value;
+                }
+            }
+        }
+         public int Defence
+        {
+            get {return defence;}
+            set
+            {
+                if (value>0)
+                {
+                    defence = value;
+                }
+            }
+        }
         public int Atacar()
         {
-                return this.Attackdmg;
+                return this.attackdmg;
         }
 
         public void AgregarBaston(Baston baston)
@@ -41,14 +75,14 @@ namespace Program
             if(this.Baston == null)
             {
                 this.Baston = baston;
-                Attackdmg = Attackdmg + Baston.AttackDmg;
+                this.AttackDmg = this.attackdmg + Baston.AttackDmg;
             }
         }
-        public void QuitarBaston(Baston baston)
+        public void QuitarBaston()
         {
             if(this.Baston != null)
             {
-                Attackdmg = Attackdmg - Baston.AttackDmg;
+                this.AttackDmg = this.attackdmg - Baston.AttackDmg;
                 this.Baston = null;
             }
         }
@@ -57,14 +91,14 @@ namespace Program
             if(this.Libro == null)
             {
                 this.Libro = libro;
-                Defence = Defence + Libro.Defence;
+                this.Defence = this.defence + Libro.Defence;
             }
         }
-        public void QuitarLibro(Libro libro)
+        public void QuitarLibro()
         {
             if(this.Libro != null)
             {
-                Defence = Defence - Libro.Defence;
+                this.Defence = this.defence - Libro.Defence;
                 this.Libro = null;
             }
         }
@@ -73,14 +107,15 @@ namespace Program
         {
             if (this.Health > 0)
             {  
+                
                 if (this.Defence > 0)
                 {
-                    this.Health = this.Health - atacar*(this.Defence/100);
+                    this.Health = this.health - atacar / this.Defence;
                 }
                 else
                 {
-                    this.Health = this.Health - atacar;
-                }   
+                    this.Health = this.health - atacar;
+                }  
             }   
             
         }
