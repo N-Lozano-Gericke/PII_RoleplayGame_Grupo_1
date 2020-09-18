@@ -4,22 +4,32 @@ namespace Program
 {
     public class Caballero
     {
-        private int Vida = 100;
-        private int Ataque = 50;
+        private int vida;
+        private int ataque;
 
-        private int Defensa = 60;
-        private String Nombre;
+        private int defensa;
+        
+        private string nombre;
+        public string Nombre
+        {
+            get {return nombre;}
+            set
+            {
+                if (!String.IsNullOrEmpty(value))
+                {
+                    nombre = value;
+                }
+            }
+        }
 
         public Espada Espada;        
         public Escudo Escudo;    
-        public Caballero (String nombre, int vida, int ataque, int defensa)
+        public Caballero (String nombre)
         {
             this.Nombre = nombre;
-            this.Vida = vida;
-            this.Ataque = ataque;
-            this.Defensa = defensa;
-
-
+            this.Vida = 100;
+            this.Ataque = 50;
+            this.Defensa = 60;
         }
         
         public void AgregarEspada(Espada espada)
@@ -29,6 +39,10 @@ namespace Program
                 this.Espada = espada;
                 this.Ataque = this.Ataque + espada.valorAtaque;
             }
+            else
+            {
+                Console.Writeline("Ya posees una espada equipada");
+            }
         }
         public void QuitarEspada()
         {
@@ -36,6 +50,10 @@ namespace Program
             {
                 this.Ataque = this.Ataque - this.Espada.valorAtaque;
                 this.Espada = null;
+            }
+            else
+            {
+                Console.Writeline("No posees una espada equipada");
             }
         }
         public void AgregarEscudo(Escudo escudo)
@@ -45,6 +63,10 @@ namespace Program
                 this.Escudo = escudo;
                 this.Defensa = this.Defensa + escudo.valorDefensa;
             }
+            else
+            {
+                Console.Writeline("Ya posees un escudo equipada");
+            }
         }
         public void QuitarEscudo()
         {
@@ -52,6 +74,10 @@ namespace Program
             {
                 this.Defensa = this.Defensa - this.Escudo.valorDefensa;
                 this.Espada = null;
+            }
+            else
+            {
+                Console.Writeline("No posees una espada equipada");
             }
         }
     }
