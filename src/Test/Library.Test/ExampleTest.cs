@@ -1,6 +1,7 @@
 using NUnit.Framework;
 
-namespace Test.Library
+namespace Program
+//namespace Test.Library
 {
 
 
@@ -8,9 +9,19 @@ namespace Test.Library
     {
 
         [Test]
-        public void dummyTest()
+        /*public void dummyTest()
         {
             Assert.True(true);
+        }
+        */
+        public void EnanoAtaque()
+        {
+            Enano Guz = new Enano ("Guzman");
+            Hacha a = new Hacha ();
+            Guz.AgregarHacha (a);
+            Assert.AreEqual (Guz.Atacar, 50);
+
+
         }
 
     }

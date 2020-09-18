@@ -23,13 +23,12 @@ namespace Program
             this.Ataque = this.Ataque + Hacha.valorataque;
         }
         
-        public int Atacar()
+        public int Atacar
         {
-            /*get
+            get
             {
                 return this.Ataque;
-            }*/
-            return this.Ataque;
+            }
         }
         public int RecibirAtaque (int ataque)
         {
