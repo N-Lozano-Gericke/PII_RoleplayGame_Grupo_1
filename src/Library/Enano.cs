@@ -30,6 +30,14 @@ namespace Program
                 return this.Ataque;
             }
         }
+
+        public int ValorDefensa
+        {
+            get
+            {
+                return this.Defensa;
+            }
+        }
         public int RecibirAtaque (int ataque)
         {
             this.Vida = this.Vida - ataque;
