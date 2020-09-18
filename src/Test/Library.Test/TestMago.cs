@@ -24,14 +24,7 @@ namespace Program
             Gandalf.Name = "";
             Assert.AreEqual(Gandalf.Name, Nombre);
         }
-        [Test]
-        public void TestMago_AgregarAtaque()
-        {
-            int damage = Gandalf.AttackDmg;
-            Gandalf.AgregarBaston(Baston);
-            Assert.AreEqual(Gandalf.AttackDmg, damage + Baston.AttackDmg);
-        }
-
+        
         [Test]
         public void TestMago_QuitarAtaque()
         {
@@ -42,11 +35,11 @@ namespace Program
         }
 
         [Test]
-        public void TestMago_AgregarDefensa()
+        public void TestMago_AgregarAtaque()
         {
-            int defence = Gandalf.Defence;
-            Gandalf.AgregarLibro(Libro);
-            Assert.AreEqual(Gandalf.Defence, defence + Libro.Defence);
+            int damage = Gandalf.AttackDmg;
+            Gandalf.AgregarBaston(Baston);
+            Assert.AreEqual(Gandalf.AttackDmg, damage + Baston.AttackDmg);
         }
 
         [Test]
@@ -56,6 +49,14 @@ namespace Program
             Gandalf.AgregarLibro(Libro);
             Gandalf.QuitarLibro();
             Assert.AreEqual(Gandalf.Defence, defence);
+        }
+
+        [Test]
+        public void TestMago_AgregarDefensa()
+        {
+            int defence = Gandalf.Defence;
+            Gandalf.AgregarLibro(Libro);
+            Assert.AreEqual(Gandalf.Defence, defence + Libro.Defence);
         }
 
         [Test]
