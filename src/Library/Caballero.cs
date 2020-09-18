@@ -37,7 +37,7 @@ namespace Program
             if (this.Espada == null)
             {
                 this.Espada = espada;
-                this.Ataque = this.Ataque + espada.valorAtaque;
+                this.Ataque = this.Ataque + espada.AtaqueEspada;
             }
             else
             {
@@ -48,7 +48,7 @@ namespace Program
         {
             if (this.Espada != null)
             {
-                this.Ataque = this.Ataque - this.Espada.valorAtaque;
+                this.Ataque = this.Ataque - this.Espada.AtaqueEspada;
                 this.Espada = null;
             }
             else
@@ -61,7 +61,7 @@ namespace Program
             if (this.Escudo == null)
             {
                 this.Escudo = escudo;
-                this.Defensa = this.Defensa + escudo.valorDefensa;
+                this.Defensa = this.Defensa + escudo.DefensaEscudo;
             }
             else
             {
@@ -72,7 +72,7 @@ namespace Program
         {
             if (this.Escudo != null)
             {
-                this.Defensa = this.Defensa - this.Escudo.valorDefensa;
+                this.Defensa = this.Defensa - this.Escudo.DefensaEscudo;
                 this.Espada = null;
             }
             else

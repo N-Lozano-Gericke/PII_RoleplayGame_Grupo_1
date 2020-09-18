@@ -3,13 +3,17 @@ using System;
 namespace Program
 {
     public class Escudo
-    {
-        public int valorDefensa
+     {
+        private int defensaEscudo;
+
+        public int DefensaEscudo
         {
-            get
-            {
-                return 75;
-            }
+            get {return defensaEscudo;}
         }
-     }
+    
+        public Escudo()
+        {
+            this.defensaEscudo = 35;
+        }
+    }
 }

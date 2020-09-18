@@ -1,12 +1,13 @@
 using NUnit.Framework;
 
-namespace Test.Library
+namespace Program
 {
 
 
     public class ExampleTest
     {
-
+        Caballero CaballeroI = new Caballero("Aragon");
+        
         [Test]
         public void dummyTest()
         {

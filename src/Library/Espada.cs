@@ -4,12 +4,16 @@ namespace Program
 {
     public class Espada
     {
-        public int valorAtaque
+        private int ataqueEspada;
+
+        public int AtaqueEspada
         {
-            get
-            {
-                return 35;
-            }
+            get {return ataqueEspada;}
+        }
+    
+        public Espada()
+        {
+            this.ataqueEspada = 35;
         }
     }
 }
