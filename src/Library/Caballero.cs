@@ -4,44 +4,10 @@ namespace Program
 {
     public class Caballero
     {
-        private int vida;
-        public int Vida
-        {
-            get {return vida;}
-            set
-            {
-                if (value>=0)
-                {
-                    vida = value;
-                }
-            }
-        }
-        private int ataque;
+        private int Vida;
+        private int Ataque;
 
-        public int Ataque
-        {
-            get {return ataque;}
-            set
-            {
-                if (value>=0)
-                {
-                    ataque = value;
-                }
-                }
-        }
-
-        private int defensa;
-        public int Defensa
-        {
-            get {return defensa;}
-            set
-            {
-                if (value>0)
-                {
-                    defensa = value;
-                }
-            }
-        }
+        private int Defensa;
         
         private string nombre;
         public string Nombre
@@ -107,11 +73,11 @@ namespace Program
             if (this.Escudo != null)
             {
                 this.Defensa = this.Defensa - this.Escudo.DefensaEscudo;
-                this.Escudo = null;
+                this.Espada = null;
             }
             else
             {
-                Console.WriteLine("No posees una escudo equipado");
+                Console.WriteLine("No posees una espada equipada");
             }
         }
     }
